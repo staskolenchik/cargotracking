@@ -1,0 +1,1 @@
+ALTER TABLE car ADD UNIQUE (number);

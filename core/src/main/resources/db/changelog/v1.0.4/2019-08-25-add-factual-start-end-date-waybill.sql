@@ -1,0 +1,2 @@
+ALTER TABLE waybill ADD COLUMN IF NOT EXISTS factual_start_date TIMESTAMP;
+ALTER TABLE waybill ADD COLUMN IF NOT EXISTS factual_end_date TIMESTAMP;

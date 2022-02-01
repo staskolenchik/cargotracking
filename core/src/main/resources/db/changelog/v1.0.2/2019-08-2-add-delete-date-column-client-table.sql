@@ -1,0 +1,1 @@
+ALTER TABLE client_company ADD COLUMN IF NOT EXISTS delete_date TIMESTAMP;

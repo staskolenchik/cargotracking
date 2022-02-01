@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS repair_account(
+    user_id BIGINT NOT NULL PRIMARY KEY,
+    uid VARCHAR(255) NOT NULL
+);

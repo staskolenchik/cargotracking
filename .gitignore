@@ -1,0 +1,19 @@
+# Maven
+target/
+out/
+log/
+
+# Intellij
+.idea
+*.iws
+*.iml
+*.ipr
+
+#node,npm
+node_modules/
+dist/
+**/resources/public/
+
+#other
+*.log
+*.log*

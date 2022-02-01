@@ -1,0 +1,1 @@
+ALTER TABLE product_writeoff ADD COLUMN IF NOT EXISTS delete_date TIMESTAMP;

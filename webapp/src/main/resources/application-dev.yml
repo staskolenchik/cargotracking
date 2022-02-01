@@ -1,0 +1,82 @@
+spring:
+  data:
+    solr:
+      host: http://localhost:8983/solr/
+
+  application:
+    name: cargotrucking
+
+  datasource:
+    url: jdbc:postgresql://localhost:5444/trucking
+    username: teammate
+    password: teammate
+
+  jpa:
+    generate-ddl: false
+    show_sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+  liquibase:
+    change-log: classpath:/db/changelog/master.xml
+
+  mail:
+    default-encoding: UTF-8
+    port: 465
+    protocol: smtps
+    username: cargo.trucking.test@gmail.com
+    password: cargotrucking2019
+    host: smtp.gmail.com
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+mail.debug: true
+
+templates:
+  filepath: d:/birthday-templates
+
+server:
+  port: 8090
+
+pagination:
+  page-size:
+    min: 1
+    max: 20
+    default: 10
+
+report:
+  fuel-cost: 0.3
+  product-cost: 3
+  product-lost-fine: 3
+  kilometer-cost: 1
+  day-fine: 10
+
+security:
+  secret_key: secret-key
+  validity_access_time: 3600000
+  validity_refresh_time: 604800000
+
+logging:
+  file: app.log
+  level:
+    com.itechart: DEBUG
+
+    org.hibernate:
+      SQL: DEBUG
+      type.descriptor.sql.BasicBinder: TRACE
+
+    org.springframework:
+      web.filter.CommonsRequestLoggingFilter: DEBUG
+      data.solr.core.SolrTemplate: DEBUG
+
+  pattern:
+    console: "%d{HH:mm:ss.SSS} %X{sessionId} [%thread] %highlight(%-5level) %logger{36} - %msg%n"

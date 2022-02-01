@@ -1,0 +1,1 @@
+ALTER TABLE client_status_history ALTER COLUMN date TYPE TIMESTAMP;

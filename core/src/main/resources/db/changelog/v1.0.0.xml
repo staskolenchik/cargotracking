@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="andrey.podolski">
+        <sqlFile path="v1.0.0/2019-07-16-client-company-table.sql" relativeToChangelogFile="true" splitStatements="false" />
+    </changeSet>
+
+    <changeSet id="2" author="andrey.podolski">
+        <sqlFile path="v1.0.0/2019-07-16-client-status-history-table.sql" relativeToChangelogFile="true" splitStatements="false" />
+    </changeSet>
+
+    <changeSet id="3" author="andrey.podolski">
+        <sqlFile path="v1.0.0/2019-07-16-car-table.sql" relativeToChangelogFile="true" splitStatements="false" />
+    </changeSet>
+
+    <changeSet id="4" author="dmitry.bortnik">
+        <sqlFile path="v1.0.0/2019-07-16-user-table.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+    <changeSet id="5" author="dmitry.bortnik">
+        <sqlFile path="v1.0.0/2019-07-16-user-role-table.sql" relativeToChangelogFile="true" splitStatements="false" />
+    </changeSet>
+
+    <changeSet id="6" author="dmitry.bortnik">
+        <sqlFile path="v1.0.0/2019-07-16-storage-table.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+    <changeSet id="7" author="andrey.podolski">
+        <sqlFile path="v1.0.0/2019-07-16-product-owner-table.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+    <changeSet id="8" author="dmitry.bortnik">
+        <sqlFile path="v1.0.0/2019-07-16-invoice-table.sql" relativeToChangelogFile="true" splitStatements="false" />
+    </changeSet>
+
+    <changeSet id="9" author="dmitry.bortnik">
+        <sqlFile path="v1.0.0/2019-07-16-product-table.sql" relativeToChangelogFile="true" splitStatements="false" />
+    </changeSet>
+
+    <changeSet id="10" author="dmitry.bortnik">
+        <sqlFile path="v1.0.0/2019-07-16-product-writeoff-table.sql" relativeToChangelogFile="true" splitStatements="false" />
+    </changeSet>
+
+    <changeSet id="11" author="andrey.podolski">
+        <sqlFile path="v1.0.0/2019-07-16-waybill-table.sql" relativeToChangelogFile="true" splitStatements="false" />
+    </changeSet>
+
+    <changeSet id="12" author="andrey.podolski">
+        <sqlFile path="v1.0.0/2019-07-16-checkpoint-table.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+</databaseChangeLog>

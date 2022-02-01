@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="dmitry.bortnik">
+        <sqlFile path="v1.0.3/2019-08-06-refresh-token-table.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+    <changeSet id="2" author="dmitry.bortnik">
+        <sqlFile path="v1.0.3/2019-08-09-add-delete-date-column-product-owner.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+    <changeSet id="3" author="dmitry.bortnik">
+        <sqlFile path="v1.0.3/2019-08-10-add-unique-constraint-number-car.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+    <changeSet id="4" author="dmitry.bortnik">
+        <sqlFile path="v1.0.3/2019-08-10-add-delete-date-column-car-table.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+    <changeSet id="5" author="dmitry.bortnik">
+        <sqlFile path="v1.0.3/2019-08-13-add-address-column-product-owner-table.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+    <changeSet id="6" author="dmitry.bortnik">
+        <sqlFile path="v1.0.3/2019-08-13-delete-enabled-columns.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+    <changeSet id="7" author="dmitry.bortnik">
+        <sqlFile path="v1.0.3/2019-08-17-add-delete-date-column-product-table.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+    <changeSet id="8" author="andrey.podolski">
+        <sqlFile path="v1.0.3/2019-08-23-add-not-null-email.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,1 @@
+ALTER TABLE product_owner ADD COLUMN IF NOT EXISTS delete_date TIMESTAMP;

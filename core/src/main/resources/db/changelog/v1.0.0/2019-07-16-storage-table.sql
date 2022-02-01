@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS storage (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(20) NOT NULL,
+    address VARCHAR(40) NOT NULL
+);

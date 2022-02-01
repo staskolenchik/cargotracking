@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="1" author="dmitry.bortnik">
+        <sqlFile path="v1.0.1/2019-07-20-add-delete-date-column-user-table.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+    <changeSet id="2" author="dmitry.bortnik">
+        <sqlFile path="v1.0.1/2019-07-20-add-unique-constraint-login-user.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+    <changeSet id="13" author="dmitry.bortnik">
+        <sqlFile path="v1.0.1/2019-07-26-add-sysadmin-user.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+    <changeSet id="3" author="dmitry.bortnik">
+        <sqlFile path="v1.0.1/2019-07-28-encrypt-user-password.sql" relativeToChangelogFile="true" />
+    </changeSet>
+
+</databaseChangeLog>
